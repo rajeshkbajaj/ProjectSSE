@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message session_guid="SESSION_ID" schema_version="3644767c-2632-411a-9416-44f8a7dee08e">
+    <response xaction_guid="55c26878-90fb-4a4a-aa1f-3a689310771e" type="ok">
+    	<params>
+			<mailbox>12123432</mailbox>
+         	<device_uri>{7a85f0c9-531e-4754-ad68-04c77ed63657}/{840 34567453}</device_uri>
+        </params>
+     </response>
+</message>

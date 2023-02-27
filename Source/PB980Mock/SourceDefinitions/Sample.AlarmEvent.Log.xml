@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LogFile name="AlarmEvent" >
+  <head>
+    <meta http-equiv="Content-Type" content="application/pbVentLog-alarmevent;ver=1.0" />
+    <meta http-equiv="Transfer-Encoding" content="base64" />
+  </head>
+  <body>
+    AAAADhEGEwEAAABRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAAAAIAAAAfUAAD8QAAABwgAAAcIAAAH0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFFAglEQPlDAUUCCUSABIAAAAAAAAGmw==
+  </body>
+</LogFile>
+</LogFiles>

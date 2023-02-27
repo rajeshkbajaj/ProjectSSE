@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<userLogin>
+    <logins>
+        <user_login key="7e6df303b06a5fcbdc98fd3b1b751444">
+            <value>
+                <create_date>2012-11-06T03:06:03.935-08:00</create_date>
+                <password>oWL6j69D8eERq6/a6DlqR0i5ZP3w7BmD</password>
+                <username>7e6df303b06a5fcbdc98fd3b1b751444</username>
+            </value>
+        </user_login>
+        <user_login key="21232f297a57a5a743894a0e4a801fc3">
+            <value>
+                <create_date>2012-10-26T02:54:11.813-07:00</create_date>
+                <password>UY50cmR2WFV8LPgRZaQy1jqRFFcL5pm4</password>
+                <username>21232f297a57a5a743894a0e4a801fc3</username>
+            </value>
+        </user_login>
+    </logins>
+</userLogin>

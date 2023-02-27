@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone=no>
+<ventilator  standalone_install="true"> 
+
+
+    <!--
+    Software updates that need to be made by the GUI CPU.
+    -->
+    <replace uri="PB.GUI.FLASH.BOOT" load="0xfef00000" size="198188">
+        <package 
+            remote_path="bin/u-boot32.bin"
+            hash_value="d2cfa8f28c935c6d17bb38c244d36169"
+            hash_type="md5"
+            part_number="P3.0"
+            revision="P3.0"
+            compression="false" />
+    </replace>
+
+    <replace uri="PB.GUI.FLASH.DOWNLOAD" load="0xfeb00000" size="1405316">
+        <package 
+            remote_path="bin/BdUpd.bin"
+            hash_value="e5147417cafec491c1500145af2ad48a"
+            hash_type="md5"
+            part_number="P3.0"
+            revision="P3.0"
+            compression="false" />
+    </replace>
+
+
+
+
+    <!--
+        Software updates that need to be made by the BD CPU.
+    -->
+    <replace uri="PB.BD.FLASH.BOOT" load="0xfef00000" size="198188">
+        <package 
+            remote_path="bin/u-boot32.bin"
+            hash_value="d2cfa8f28c935c6d17bb38c244d36169"
+            hash_type="md5"
+            part_number="P3.0"
+            revision="P3.0"
+            compression="false" />
+    </replace>
+
+
+    <replace uri="PB.BD.FLASH.DOWNLOAD" load="0xfeb00000" size="1405316">
+        <package 
+            remote_path="bin/BdUpd.bin"
+            hash_value="e5147417cafec491c1500145af2ad48a"
+            hash_type="md5"
+            part_number="P3.0"
+            revision="P3.0"
+            compression="false" />
+    </replace>
+
+
+</ventilator> 
+

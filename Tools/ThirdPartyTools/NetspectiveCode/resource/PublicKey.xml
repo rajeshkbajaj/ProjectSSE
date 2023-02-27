@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message schema_version="3644767c-2632-411a-9416-44f8a7dee08e">
+	<request type='opensession' xaction_guid='9650e555-810d-487b-94bf-da8d2f0e334e'>
+		<params>
+			<adminkey>resource/public_key.der</adminkey>
+			<userkey>userkey location</userkey>
+		</params>
+	</request>
+</message>

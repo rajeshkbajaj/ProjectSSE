@@ -1,0 +1,48 @@
+    
+<?xml version="1.0" standalone="yes"?>
+<!--
+    #################################################################################
+    ##                        Copyright (c) 2012 Covidien, Inc.
+    ##
+    ## This software is copyrighted by and is the sole property of Covidien. This
+    ## is a proprietary work to which Covidien claims exclusive right.  No part
+    ## of this work may be used, disclosed, reproduced, stored in an information
+    ## retrieval system, or transmitted by any means, electronic, mechanical,
+    ## photocopying, recording, or otherwise without the prior written permission
+    ## of Covidien.
+    #################################################################################
+
+ -->
+
+<!--
+    The execute element describes the other manifests that the installer will need to run. The attribute
+    indicates to the downloader that the 'installer//' driver needs to be used.
+
+    The execute element allows the downloader install to enforce a different ordering on the
+    installation on packages.
+
+    The processing of the mainfest occures in the following order,
+    0. Execute
+    1. Download/Verify firmware, software and files that need to updated.
+    2. Upload/Verify files that need to be uploaded.
+    3. Update/Verify flash.
+    4. Update/Verify firmware.
+
+-->
+
+<ventilator  uri_global="rfile://192.168.0.10/" standalone_install="false" >
+
+    <execute uri="installer://"  size="8200">
+	    <package remote_path="config/ventilator_software.xml" />
+    </execute>
+
+    <execute uri="installer://"  size="8200">
+	    <package remote_path="config/downloader_bootloader.xml" />
+    </execute>
+
+    <execute uri="installer://"  size="8200">
+	    <package remote_path="config/10119230C.xml" />
+    </execute>
+    
+</ventilator>
+

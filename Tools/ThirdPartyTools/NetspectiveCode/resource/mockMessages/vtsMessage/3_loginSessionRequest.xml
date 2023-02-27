@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message schema_version="3644767c-2632-411a-9416-44f8a7dee08e" session_guid='SESSION_ID'>
+   <request type='login' xaction_guid='e1c38f30-50a0-4ccf-a74a-c7ec11b54544'>
+      <params>
+      	 <mailbox>12123432</mailbox>
+         <username>system1@gmail.com</username> 
+         <password>system1</password>          
+      </params>
+   </request>
+</message>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message session_guid="SESSION_ID" schema_version="3644767c-2632-411a-9416-44f8a7dee08e">
+    <response xaction_guid="55c26878-90fb-4a4a-aa1f-3a689310771e" type="headers">
+    	<params><mailbox>12123432</mailbox></params>
+        <notifications>
+			<notification oid="3fdc4e82de13caa4">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fd1747335684110">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fedcb30cfef4a8b">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fe822af495ecf9d">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fdef5cc15bb7900">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fb81eb0d225aca8">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fbd498d8c18ef00">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fe9017dc2846532">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fe0bb47607dbe4e">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fedd9fd5a42f457">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fc5b2c5a5c10bdc">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fe7d47d4b52f3a4">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3fe890caf167bcf5">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+            <notification oid="3feab57c115f1164">
+                <header notification_type="updates" notification_action="SET">
+                    <notification_id>NOTIFICATION ID</notification_id>
+                    <pertinent_identifier>PERTINENT IDENTIFIER</pertinent_identifier>
+                    <pertinent_type>PERTINENT TYPE</pertinent_type>
+                </header>
+            </notification>
+        </notifications>
+    </response>
+</message>

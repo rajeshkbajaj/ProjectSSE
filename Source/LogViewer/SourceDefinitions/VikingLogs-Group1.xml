@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LogDefinitions>
+
+  <LogDefinition name="ui/ui.dat" >
+    <meta name="bitOrder" content="big-endian" />
+    <meta name="byteOrder" content="network" />
+
+    <header>
+      <Field dataOrder="1" name="FileId" dataType="System.UInt32" actualDataType="UInt32" reportHeader="File Id" numBytes="4" />
+      <Field dataOrder="2" name="FileRevision" dataType="System.UInt32" actualDataType="UInt32" reportHeader="File Rev" numBytes="4" />
+      <Field dataOrder="3" name="Status" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Status" numBytes="4" />
+      <Field dataOrder="4" name="PatientId" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Patient Id" numBytes="4" />
+      <Field dataOrder="5" name="InsertPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Insert Ptr" numBytes="4" />
+      <Field dataOrder="6" name="ExtractPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Extract Ptr" numBytes="4" />
+      <Field dataOrder="7" name="CurrPatientPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Curr Patient Ptr" numBytes="4" />
+      <Field dataOrder="8" name="CurrPatientCnt" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Curr Patient Cnt" numBytes="4" />
+      <Field dataOrder="9" name="HeaderSize" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Header Size" numBytes="4" />
+      <Field dataOrder="10" name="RecordSize" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Record Size" numBytes="4" />
+      <Field dataOrder="11" name="MaxRecords" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Max Records" numBytes="4" />
+      <Field dataOrder="12" name="FileSize" dataType="System.UInt32" actualDataType="UInt32" reportHeader="File Size" numBytes="4" />
+      <Field dataOrder="13" name="WarningLevelOffset" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Warning Offset" numBytes="4" />
+      <Field dataOrder="14" name="WarningLevelIndex" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Warning Index" numBytes="4" />
+      <Field dataOrder="15" name="FullLevelIndex" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Full Index" numBytes="4" />
+      <Field dataOrder="16" name="SearchValid" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Valid" numBytes="4" />
+      <Field dataOrder="17" name="SearchStartPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Start Ptr" numBytes="4" />
+      <Field dataOrder="18" name="SearchStopPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Stop Ptr" numBytes="4" />
+      <Field dataOrder="19" name="SearchAvailable" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Available" numBytes="4" />
+      <Field dataOrder="20" name="SearchRequested" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Requested" numBytes="4" />
+      <Field dataOrder="21" name="SearchObtained" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Obtained" numBytes="4" />
+      <Field dataOrder="22" name="SearchObtainedPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Obtained Ptr" numBytes="4" />
+
+      <Field dataOrder="23" name="Year" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="24" name="Month" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="25" name="Day" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="26" name="Hour" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="27" name="Minute" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="28" name="Second" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="29" name="MilliSecond" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+
+      <Field dataOrder="30" name="Year" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="31" name="Month" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="32" name="Day" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="33" name="Hour" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="34" name="Minute" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="35" name="Second" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="36" name="MilliSecond" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+
+      <Field dataOrder="37" name="PatientBoundaryEnforced" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Patient Boundary Enforced" numBytes="4" />
+      <Field dataOrder="38" name="Checksum" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Checksum" numBytes="4" />
+
+
+     <RenderDescription name="Header" >
+      <RenderTableAttribs>border="1" id="XX-Tbl" summary="Meta Data"</RenderTableAttribs>
+      <RenderTableHeader>
+        <thead>
+          <tr>
+            <th>Meta Data Item</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+      </RenderTableHeader>
+      <!-- indexes are based off actual data, not off the render indexes.  BTW, the 0 index is a counter -->
+      <RenderTableRow><tr><td>File Id</td><td>%1%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>File Revision</td><td>%2%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Status</td><td>%3%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Patient Id</td><td>%4%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Insert Ptr</td><td>%5%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Extract Ptr</td><td>%6%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Curr Patient Ptr</td><td>%7%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Curr Patient Cnt</td><td>%8%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Header Size</td><td>%9%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Record Size</td><td>%10%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Max Records</td><td>%11%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>File Size</td><td>%12%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Warning Level Offset</td><td>%13%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Warning Level Index</td><td>%14%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Full Level Index</td><td>%15%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Search Valid</td><td>%16%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Search Start</td><td>%17%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Search Stop</td><td>%18%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Search Available</td><td>%19%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Search Requested</td><td>%20%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Search Obtained</td><td>%21%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Search Obtained Ptr</td><td>%22%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>File Created</td><td>%23%-%24%-%25% %26%:%27%:%28%.%29%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Last Updated</td><td>%30%-%31%-%32% %33%:%34%:%35%.%36%</td></tr></RenderTableRow>
+      <RenderTableRow><tr><td>Patient Boundary Enforced</td><td>%37%</td></tr></RenderTableRow>
+       
+       <RenderField name="Year" order="1" header="Year" format="'{0:00}'" />
+       <RenderField name="Month" order="2" header="Mon" format="'{0:00}'" />
+       <RenderField name="Day" order="3" header="Day" format="'{0:00}'" />
+       <RenderField name="Hour" order="4" header="Hr" format="'{0:00}'" />
+       <RenderField name="Minute" order="5" header="Min" format="'{0:00}'" />
+       <RenderField name="Second" order="6" header="Sec" format="'{0:00}'" />
+       <RenderField name="MilliSecond" order="7" header="mSec" format="'{0:000}'" />
+       <RenderField name="PatientId" order="8" header="Patient Id" />
+       <RenderField name="ObjectId" order="10" header="Obj Id" />
+       <RenderField name="UserInteractionId" order="11" header="UI Id" />
+     </RenderDescription>
+
+
+    </header>
+
+    <!-- Fields map to the actual bit/byte structure of the raw message - embedded types folded in -->
+    <fields>
+      <Field dataOrder="0" name="Year" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="1" name="Month" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="2" name="Day" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="3" name="Hour" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="4" name="Minute" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="5" name="Second" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="6" name="MilliSecond" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+
+      <Field dataOrder="7" name="PatientId" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+      <Field dataOrder="8" name="BaseChecksum" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+      <Field dataOrder="9" name="ObjectId" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+      <Field dataOrder="10" name="UserInteractionId" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+      <Field dataOrder="11" name="RecordChecksum" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+    </fields>
+
+    <!-- Rendering describes how to generate an output file -->
+    <RenderDescriptions>
+      <RenderDescription name="Simple" >
+        <RenderTableAttribs>border="1" id="XX-Tbl" summary="Div Schedule"</RenderTableAttribs>
+        <RenderTableHeader>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Patient Id</th>
+                <th>Obj Id</th>
+                <th>User Interaction Id</th>
+              </tr>
+            </thead>
+          </RenderTableHeader>
+        <RenderTableRow>
+          <tr>
+            <td align="right">%0%</td>
+            <td>%2%-%3%-%1%</td>
+            <td align="right">%4%:%5%:%6%.%7%</td>
+            <td>%8%</td>
+            <td>%10%</td>
+            <td>%11%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderField name="Year" order="1" header="Year" format="'{0:00}'" />
+        <RenderField name="Month" order="2" header="Mon" format="'{0:00}'" />
+        <RenderField name="Day" order="3" header="Day" format="'{0:00}'" />
+        <RenderField name="Hour" order="4" header="Hr" format="'{0:00}'" />
+        <RenderField name="Minute" order="5" header="Min" format="'{0:00}'" />
+        <RenderField name="Second" order="6" header="Sec" format="'{0:00}'" />
+        <RenderField name="MilliSecond" order="7" header="mSec" format="'{0:000}'" />
+        <RenderField name="PatientId" order="8" header="Patient Id" />
+        <RenderField name="ObjectId" order="10" header="Obj Id" />
+        <RenderField name="UserInteractionId" order="11" header="UI Id" />
+      </RenderDescription>
+      <RenderDescription name="Detailed" >
+        <RenderTableAttribs>border="1" id="XX-Tbl" summary="Div Schedule"</RenderTableAttribs>
+        <RenderTableHeader>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Patient Id</th>
+              <th>Base C-Sum</th>
+              <th>Obj Id</th>
+              <th>User Interaction Id</th>
+              <th>Rec C-sum</th>
+            </tr>
+          </thead>
+        </RenderTableHeader>
+        <RenderTableRow>
+          <tr>
+            <td align="right">%0%</td>
+            <td>%2%-%3%-%1%</td>
+            <td align="right">%4%:%5%:%6%.%7%</td>
+            <td>%8%</td>
+            <td>%9%</td>
+            <td>%10%</td>
+            <td>%11%</td>
+            <td>%12%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderField name="Year" order="0" header="Year" format="20{0:00}" />
+        <RenderField name="Month" order="1" header="Mon" format="{0:00}" />
+        <RenderField name="Day" order="2" header="Day" format="{0:00}" />
+        <RenderField name="Hour" order="3" header="Hr" format="{0:00}" />
+        <RenderField name="Minute" order="4" header="Min" format="{0:00}" />
+        <RenderField name="Second" order="5" header="Sec" format="{0:00}" />
+        <RenderField name="MilliSecond" order="6" header="mSec" format="{0:000}" />
+        <RenderField name="PatientId" order="7" header="Patient Id" />
+        <RenderField name="BaseChecksum" order="8" header="Base C-Sum" />
+        <RenderField name="ObjectId" order="9" header="Obj Id" />
+        <RenderField name="UserInteractionId" order="10" header="UI Id" />
+        <RenderField name="RecordChecksum" order="11" header="Rec C-sum" />
+      </RenderDescription>
+    </RenderDescriptions>
+
+  </LogDefinition>
+
+
+  <LogDefinition name="diag/*.dat" >
+    <meta name="bitOrder" content="big-endian" />
+    <meta name="byteOrder" content="network" />
+
+    <header>
+      <Field dataOrder="1" name="FileId" dataType="System.UInt32" actualDataType="UInt32" reportHeader="File Id" numBytes="4" />
+      <Field dataOrder="2" name="FileRevision" dataType="System.UInt32" actualDataType="UInt32" reportHeader="File Rev" numBytes="4" />
+      <Field dataOrder="3" name="Status" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Status" numBytes="4" />
+      <Field dataOrder="4" name="PatientId" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Patient Id" numBytes="4" />
+      <Field dataOrder="5" name="InsertPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Insert Ptr" numBytes="4" />
+      <Field dataOrder="6" name="ExtractPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Extract Ptr" numBytes="4" />
+      <Field dataOrder="7" name="CurrPatientPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Curr Patient Ptr" numBytes="4" />
+      <Field dataOrder="8" name="CurrPatientCnt" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Curr Patient Cnt" numBytes="4" />
+      <Field dataOrder="9" name="HeaderSize" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Header Size" numBytes="4" />
+      <Field dataOrder="10" name="RecordSize" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Record Size" numBytes="4" />
+      <Field dataOrder="11" name="MaxRecords" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Max Records" numBytes="4" />
+      <Field dataOrder="12" name="FileSize" dataType="System.UInt32" actualDataType="UInt32" reportHeader="File Size" numBytes="4" />
+      <Field dataOrder="13" name="WarningLevelOffset" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Warning Offset" numBytes="4" />
+      <Field dataOrder="14" name="WarningLevelIndex" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Warning Index" numBytes="4" />
+      <Field dataOrder="15" name="FullLevelIndex" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Full Index" numBytes="4" />
+      <Field dataOrder="16" name="SearchValid" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Valid" numBytes="4" />
+      <Field dataOrder="17" name="SearchStartPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Start Ptr" numBytes="4" />
+      <Field dataOrder="18" name="SearchStopPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Stop Ptr" numBytes="4" />
+      <Field dataOrder="19" name="SearchAvailable" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Available" numBytes="4" />
+      <Field dataOrder="20" name="SearchRequested" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Requested" numBytes="4" />
+      <Field dataOrder="21" name="SearchObtained" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Obtained" numBytes="4" />
+      <Field dataOrder="22" name="SearchObtainedPtr" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Search Recs Obtained Ptr" numBytes="4" />
+
+      <Field dataOrder="23" name="Year" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="24" name="Month" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="25" name="Day" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="26" name="Hour" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="27" name="Minute" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="28" name="Second" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="29" name="MilliSecond" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+
+      <Field dataOrder="30" name="Year" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="31" name="Month" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="32" name="Day" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="33" name="Hour" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="34" name="Minute" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="35" name="Second" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="36" name="MilliSecond" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+
+      <Field dataOrder="37" name="PatientBoundaryEnforced" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Patient Boundary Enforced" numBytes="4" />
+      <Field dataOrder="38" name="Checksum" dataType="System.UInt32" actualDataType="UInt32" reportHeader="Checksum" numBytes="4" />
+
+
+      <RenderDescription name="Header" >
+        <RenderTableAttribs>border="1" id="XX-Tbl" summary="Meta Data"</RenderTableAttribs>
+        <RenderTableHeader>
+          <thead>
+            <tr>
+              <th>Meta Data Item</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+        </RenderTableHeader>
+        <!-- indexes are based off actual data, not off the render indexes.  BTW, the 0 index is a counter -->
+        <RenderTableRow>
+          <tr>
+            <td>File Id</td>
+            <td>%1%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderTableRow>
+          <tr>
+            <td>File Revision</td>
+            <td>%2%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderTableRow>
+          <tr>
+            <td>Status</td>
+            <td>%3%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderTableRow>
+          <tr>
+            <td>File Created</td>
+            <td>%23%-%24%-%25% %26%:%27%:%28%.%29%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderTableRow>
+          <tr>
+            <td>Last Updated</td>
+            <td>%30%-%31%-%32% %33%:%34%:%35%.%36%</td>
+          </tr>
+        </RenderTableRow>
+
+        <RenderField name="Year" order="1" header="Year" format="'{0:00}'" />
+        <RenderField name="Month" order="2" header="Mon" format="'{0:00}'" />
+        <RenderField name="Day" order="3" header="Day" format="'{0:00}'" />
+        <RenderField name="Hour" order="4" header="Hr" format="'{0:00}'" />
+        <RenderField name="Minute" order="5" header="Min" format="'{0:00}'" />
+        <RenderField name="Second" order="6" header="Sec" format="'{0:00}'" />
+        <RenderField name="MilliSecond" order="7" header="mSec" format="'{0:000}'" />
+        <RenderField name="PatientId" order="8" header="Patient Id" />
+        <RenderField name="ObjectId" order="10" header="Obj Id" />
+        <RenderField name="UserInteractionId" order="11" header="UI Id" />
+      </RenderDescription>
+
+    </header>
+
+    <!-- Fields map to the actual bit/byte structure of the raw message - embedded types folded in -->
+    <fields>
+      <Field dataOrder="0" name="Year" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="1" name="Month" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="2" name="Day" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="3" name="Hour" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="4" name="Minute" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="5" name="Second" dataType="System.Byte" actualDataType="UInt8" numBytes="1" />
+      <Field dataOrder="6" name="MilliSecond" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+
+      <Field dataOrder="7" name="PatientId" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+      <Field dataOrder="8" name="BaseChecksum" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+      <Field dataOrder="9" name="DiagnosticCode" dataType="System.Byte" actualDataType="DiagnosticCode" numBytes="12" isUnionSet="DiagnosticCodes" />
+      <Field dataOrder="10" name="RecordChecksum" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+    </fields>
+
+    
+    <!-- Unions are individual definitions of sub-structures which will be C-Unioned (overlayed on the same memory) -->
+    <!-- Bit Offsets are relative to the Byte in which they begin -->
+
+    <unions>
+      <union name="SystemEventBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="cpuFlagId" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="2" />
+        <field name="systemEventId" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="6" bitLength="10" />
+        <field name="UNUSED_WORD" dataOrder="3" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="auxEventCode" dataOrder="4" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="UNUSED_LWORD4" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="cpuFlagId" order="2" header="CPU" />
+        <RenderField name="systemEventId" order="3" header="Sys Evt Id" />
+        <RenderField name="auxEventCode" order="4" header="Aux Evt Code" />
+        <RenderExtra name="DiagCode" order="5" header="Diag Code" PreFormat="'(1==%1%?E:S){0:00000}'" Elements="1" />
+      </union>
+      <union name="SoftwareTestBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="cpuFlagId" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="2" />
+        <field name="assertionId" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="6" bitLength="3" />
+        <field name="UNUSED_BITS" dataOrder="3" dataType="System.Byte" actualDataType="Uint8" bitOffset="1" bitLength="7" />
+        <field name="activeTaskId" dataOrder="4" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="subsystemId" dataOrder="5" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="moduleId" dataOrder="6" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="lineNumber" dataOrder="7" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="auxErrorCode" dataOrder="8" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="cpuFlagId" order="2" header="CPU" />
+        <RenderField name="assertionId" order="3" header="Assert Id" />
+        <RenderField name="activeTaskId" order="4" header="Task Id" />
+        <RenderField name="subsystemId" order="5" header="SubSys Id" />
+        <RenderField name="moduleId" order="6" header="Module Id" />
+        <RenderField name="lineNumber" order="7" header="Line #" />
+        <RenderField name="auxEventCode" order="8" header="Aux Evt Code" />
+        <RenderExtra name="DiagCode" order="9" header="Diag Code" PreFormat="'(1==%1%?D:U){0:00}{1:000}'" Elements="5,6" />
+      </union>
+      <union name="ExceptionBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="cpuFlagId" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="2" />
+        <field name="vectorNumber" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="6" bitLength="10" />
+        <field name="activeTaskId" dataOrder="3" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="instructionAddr" dataOrder="4" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="faultAddr" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="cpuFlagId" order="2" header="CPU" />
+        <RenderField name="vectorNumber" order="3" header="Vector #" />
+        <RenderField name="activeTaskId" order="4" header="Task Id" />
+        <RenderField name="instructionAddr" order="5" header="Inst Addr" />
+        <RenderField name="faultAddr" order="6" header="Fault Addr" />
+        <RenderExtra name="DiagCode" order="7" header="Diag Code" PreFormat="'(1==%1%?D:U)T0{0:000}'" Elements="2" />
+      </union>
+      <union name="NmiBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="cpuFlagId" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="2" />
+        <field name="UNUSED_BITS" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="6" bitLength="10" />
+        <field name="nmiSourceId" dataOrder="3" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="errorCode" dataOrder="4" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="UNUSED_LWORD3" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="cpuFlagId" order="2" header="CPU" />
+        <RenderField name="nmiSourceId" order="3" header="NMI Src Id" />
+        <RenderField name="errorCode" order="4" header="Error Code" />
+        <RenderExtra name="DiagCode" order="5" header="Diag Code" PreFormat="'(1==%1%?H:V)N0{0:000}'" Elements="3" />
+      </union>
+      <union name="CommunicationBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="cpuFlagId" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="2" />
+        <field name="UNUSED_BITS" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="6" bitLength="10" />
+        <field name="commFaultId" dataOrder="3" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="UNUSED_LWORD2" dataOrder="4" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="UNUSED_LWORD3" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="cpuFlagId" order="2" header="CPU" />
+        <RenderField name="commFaultId" order="3" header="Comm Fault Id" />
+        <RenderExtra name="DiagCode" order="4" header="Diag Code" PreFormat="'(1==%1%?L:Z)C{0:0000}'" Elements="3" />
+      </union>
+      <union name="StartupSelfTestBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="cpuFlagId" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="2" />
+        <field name="failureLevel" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="6" bitLength="3" />
+        <field name="UNUSED_BITS" dataOrder="3" dataType="System.Byte" actualDataType="Uint8" bitOffset="1" bitLength="7" />
+        <field name="startupFaultId" dataOrder="4" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="programCounter" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="UNUSED_BYTE" dataOrder="6" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="vectorNum" dataOrder="7" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="nmiSourceReg" dataOrder="8" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="auxErrorCode" dataOrder="9" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="cpuFlagId" order="2" header="CPU" />
+        <RenderField name="failureLevel" order="3" header="Fail Lvl" />
+        <RenderField name="startupFaultId" order="4" header="Strt Fault Id" />
+        <RenderField name="programCounter" order="5" header="Pgm Ctr" />
+        <RenderField name="vectorNum" order="6" header="Vector #" />
+        <RenderField name="nmiSourceReg" order="7" header="NMI Src Reg" />
+        <RenderField name="auxEventCode" order="8" header="Aux Evt Code" />
+        <RenderExtra name="DiagCode" order="9" header="Diag Code" PreFormat="'(1==%1%?(1==%2%?K:L):(1==%2%?X:Z))P0{0:000}'" Elements="4" />
+      </union>
+      <union name="BackgroundTestBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="cpuFlagId" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="2" />
+        <field name="failureLevel" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="6" bitLength="3" />
+        <field name="reserved" dataOrder="3" dataType="System.Byte" actualDataType="Uint8" bitOffset="1" bitLength="7" />
+        <field name="activeTaskId" dataOrder="4" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="errorCode" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="testNumber" dataOrder="6" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="cpuFlagId" order="2" header="CPU" />
+        <RenderField name="failureLevel" order="3" header="Fail Lvl" />
+        <RenderField name="activeTaskId" order="4" header="Task Id" />
+        <RenderField name="errorCode" order="5" header="Error Code" />
+        <RenderField name="testNumber" order="6" header="Test #" />
+        <RenderExtra name="DiagCode" order="7" header="Diag Code" PreFormat="'(1==%1%?(1==%2%?K:L):(1==%2%?X:Z))B{0:0000}'" Elements="6" />
+      </union>
+      <union name="ShortSelfTestBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="failureLevel" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="3" />
+        <field name="testNumber" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="7" bitLength="9" />
+        <field name="isSingleTest" dataOrder="3" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="stepNumber" dataOrder="4" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="UNUSED_LWORD2" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="UNUSED_LWORD3" dataOrder="6" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="failureLevel" order="2" header="Fail Lvl" />
+        <RenderField name="testNumber" order="3" header="Test #" />
+        <RenderField name="isSingleTest" order="4" header="Is Sngl" />
+        <RenderField name="stepNumber" order="5" header="Step #" />
+        <RenderExtra name="DiagCode" order="6" header="Diag Code" PreFormat="'(1==%1%?F:A)S{0:00}{1:00}'" Elements="2,4" />
+      </union>
+      <union name="ExtendedSelfTestBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="failureLevel" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="3" />
+        <field name="testNumber" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="7" bitLength="9" />
+        <field name="isSingleTest" dataOrder="3" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="stepNumber" dataOrder="4" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="UNUSED_LWORD2" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="UNUSED_LWORD3" dataOrder="6" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="failureLevel" order="2" header="Fail Lvl" />
+        <RenderField name="testNumber" order="3" header="Test #" />
+        <RenderField name="isSingleTest" order="4" header="Is Sngl" />
+        <RenderField name="stepNumber" order="5" header="Step #" />
+        <RenderExtra name="DiagCode" order="6" header="Diag Code" PreFormat="'(1==%1%?F:A)E{0:00}{1:00}'" Elements="2,4" />
+      </union>
+      <union name="ManualTestBits" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="failureLevel" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="3" />
+        <field name="testNumber" dataOrder="2" dataType="System.Byte" actualDataType="Uint8" bitOffset="7" bitLength="9" />
+        <field name="isSingleTest" dataOrder="3" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="stepNumber" dataOrder="4" dataType="System.Byte" actualDataType="Uint8" numBytes="1" />
+        <field name="UNUSED_LWORD2" dataOrder="5" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="UNUSED_LWORD3" dataOrder="6" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="failureLevel" order="2" header="Fail Lvl" />
+        <RenderField name="testNumber" order="3" header="Test #" />
+        <RenderField name="isSingleTest" order="4" header="Is Sngl" />
+        <RenderField name="stepNumber" order="5" header="Step #" />
+        <RenderExtra name="DiagCode" order="6" header="Diag Code" PreFormat="'(1==%1%?F:A)M{0:00}{1:00}'" Elements="2,4" />
+      </union>
+      <union name="CommonLayoutBits_" numBytes="12" >
+        <field name="diagId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" bitOffset="0" bitLength="4" />
+        <field name="RESERVED_BITS" dataOrder="1" dataType="System.Byte" actualDataType="Uint8" bitOffset="4" bitLength="12" />
+        <field name="RESERVED_WORD" dataOrder="2" dataType="System.UInt16" actualDataType="UInt16" numBytes="2" />
+        <field name="RESERVED_LWORD2" dataOrder="3" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <field name="RESERVED_LWORD3" dataOrder="4" dataType="System.UInt32" actualDataType="UInt32" numBytes="4" />
+        <RenderField name="diagId" order="1" header="Diag Id" />
+        <RenderField name="RESERVED_BITS" order="2" header="Rsvrd Bits" />
+        <RenderField name="RESERVED_WORD" order="3" header="Rsvrd Word" />
+        <RenderField name="RESERVED_LWORD2" order="4" header="Rsvrd L-Word2" />
+        <RenderField name="RESERVED_LWORD3" order="5" header="Rsvrd L-Word3" />
+        <ExtraField name="DiagCode" order="6" header="Diag Code" PreFormat="'CLBERR'" />
+      </union>
+    </unions>
+
+    <!-- UnionSets are the collections of union definitions which are overlayed together -->
+    <unionSets>
+      <unionSet name="DiagnosticCodes" >
+        <unionChoice name="SystemEventBits" ctrlField="diagId" inRangeLow="1" inRangeHigh="1" />
+        <unionChoice name="SoftwareTestBits" ctrlField="diagId" inRangeLow="2" inRangeHigh="2"  />
+        <unionChoice name="ExceptionBits" ctrlField="diagId" inRangeLow="3" inRangeHigh="3"  />
+        <unionChoice name="BackgroundTestBits" ctrlField="diagId" inRangeLow="4" inRangeHigh="4"  />
+        <unionChoice name="StartupSelfTestBits" ctrlField="diagId" inRangeLow="5" inRangeHigh="5"  />
+        <unionChoice name="CommunicationBits" ctrlField="diagId" inRangeLow="6" inRangeHigh="6"  />
+        <unionChoice name="ShortSelfTestBits" ctrlField="diagId" inRangeLow="7" inRangeHigh="7"  />
+        <unionChoice name="ExtendedSelfTestBits" ctrlField="diagId" inRangeLow="8" inRangeHigh="8"  />
+        <unionChoice name="NmiBits" ctrlField="diagId" inRangeLow="9" inRangeHigh="9"  />
+        <unionChoice name="ManualTestBits" ctrlField="diagId" inRangeLow="10" inRangeHigh="10"  />
+        <unionChoice name="CommonLayoutBits_" ctrlField="diagId" inRangeLow="-1" inRangeHigh="-1"  />
+      </unionSet>
+    </unionSets>
+
+
+    <!-- Rendering describes how to generate an output file -->
+    <RenderDescriptions>
+      <RenderDescription name="Simple" >
+        <RenderTableAttribs>border="1" id="XX-Tbl" summary="Div Schedule"</RenderTableAttribs>
+        <RenderTableHeader>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Patient Id</th>
+              <th>Diag Code</th>
+            </tr>
+          </thead>
+        </RenderTableHeader>
+        <!-- indexes are based off actual data, not off the render indexes.  BTW, the 0 index is a counter -->
+        <RenderTableRow>
+          <tr>
+            <td align="right">%0%</td>
+            <td>%2%-%3%-%1%</td>
+            <td align="right">%4%:%5%:%6%.%7%</td>
+            <td>%8%</td>
+            <td>%10%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderField name="Year" order="1" header="Year" format="'{0:00}'" />
+        <RenderField name="Month" order="2" header="Mon" format="'{0:00}'" />
+        <RenderField name="Day" order="3" header="Day" format="'{0:00}'" />
+        <RenderField name="Hour" order="4" header="Hr" format="'{0:00}'" />
+        <RenderField name="Minute" order="5" header="Min" format="'{0:00}'" />
+        <RenderField name="Second" order="6" header="Sec" format="'{0:00}'" />
+        <RenderField name="MilliSecond" order="7" header="mSec" format="'{0:000}'" />
+        <RenderField name="PatientId" order="8" header="Patient Id" />
+        <RenderField name="DiagnosticCode" order="10" header="UI Id" format="{0:X2}" outerFormat="'{0}'" />
+      </RenderDescription>
+      <RenderDescription name="Detailed" >
+        <RenderTableAttribs>border="1" id="XX-Tbl" summary="Div Schedule"</RenderTableAttribs>
+        <RenderTableHeader>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Patient Id</th>
+              <th>Base C-Sum</th>
+              <th>Diag Code</th>
+              <th>Rec C-sum</th>
+            </tr>
+          </thead>
+        </RenderTableHeader>
+        <RenderTableRow>
+          <tr>
+            <td align="right">%0%</td>
+            <td>%2%-%3%-%1%</td>
+            <td align="right">%4%:%5%:%6%.%7%</td>
+            <td>%8%</td>
+            <td>%9%</td>
+            <td>%10%</td>
+            <td>%11%</td>
+          </tr>
+        </RenderTableRow>
+        <RenderField name="Year" order="0" header="Year" format="20{0:00}" />
+        <RenderField name="Month" order="1" header="Mon" format="{0:00}" />
+        <RenderField name="Day" order="2" header="Day" format="{0:00}" />
+        <RenderField name="Hour" order="3" header="Hr" format="{0:00}" />
+        <RenderField name="Minute" order="4" header="Min" format="{0:00}" />
+        <RenderField name="Second" order="5" header="Sec" format="{0:00}" />
+        <RenderField name="MilliSecond" order="6" header="mSec" format="{0:000}" />
+        <RenderField name="PatientId" order="7" header="Patient Id" />
+        <RenderField name="BaseChecksum" order="8" header="Base C-Sum" />
+        <RenderField name="DiagnosticCode" order="10" header="UI Id" format="{0:X2}" outerFormat="'{0}'" />
+        <RenderField name="RecordChecksum" order="11" header="Rec C-sum" />
+      </RenderDescription>
+    </RenderDescriptions>
+
+  </LogDefinition>
+
+
+
+
+  <LogDefinition name="Alert" >
+    <meta name="bitOrder" content="big-endian" />
+    <meta name="byteOrder" content="network" />
+
+    <header>
+      <Field dataOrder="0" name="header_stuff" dataType="System.Byte" actualDataType="Uint8" reportHeader="File Id" enumDecoding="" numBytes="112" />
+    </header>
+
+    <!-- Fields map to the actual bit/byte structure of the raw message -->
+    <fields>
+      <Field dataOrder="0" displayOrder="0" name="sysLvlId_currUrgency" dataType="System.Byte" actualDataType="byte" numBytes="1" isUnionSet="SystemLevelId_CurrentUrgency" />
+
+      <Field name="RefTime" dataOrder="0" dataType="System.UInt32" actualDataType="TimeStamp"  decoding="enum:SysId_Urgency" />
+
+      <Field dataOrder="0" displayOrder="0" name="sysLvlId_currUrgency" dataType="System.Byte" actualDataType="Uint8" enumDecoding="true" supportData="SysId_Urgency_Enums" />
+      <Field dataOrder="1" displayOrder="1" name="baseMessage" dataType="System.Byte" actualDataType="Uint8" enumDecoding="" supportData="AlarmBaseMessage_Enums" />
+      <Field dataOrder="2" displayOrder="2" name="analysisIndex" dataType="System.Byte" enumDecoding="" supportData="" />
+      <Field dataOrder="3" displayOrder="3" name="updateType" dataType="System.Byte" enumDecoding="" supportData="AlarmUpdateType_Enums" />
+      <Field dataOrder="4" displayOrder="4" name="whenOccurred" dataType="System.UInt32" enumDecoding="" supportData="" />
+      <Field dataOrder="5" displayOrder="5" name="arrMsgs" dataType="System.UInt16" enumDecoding="" supportData="" numBytes="12" />
+      <Field dataOrder="6" displayOrder="-1" name="paddingBlock" dataType="System.UInt16" enumDecoding="" supportData="" />
+      <Field dataOrder="7" displayOrder="-1" name="entryCrc" dataType="System.UInt16" enumDecoding="" supportData="" />
+
+    </fields>
+
+    <!-- Unions are individual definitions of sub-structures which will be C-Unioned (overlayed on the same memory) -->
+    <unions>
+      <union name="SystemLevelId" numBytes="1" >
+        <field name="SystemLevelId" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" decoding="enum:SystemLevelIdEnum" />        
+      </union>
+      <union name="CurrentUrgency" numBytes="1" >
+        <field name="CurrentUrgency" dataOrder="0" dataType="System.Byte" actualDataType="Uint8" decoding="enum:CurrentUrgencyEnum" />
+      </union>
+    </unions>
+
+    <!-- UnionSets are the collections of union definitions which are overlayed together -->
+    <unionSets>
+      <unionSet name="SystemLevelId_CurrentUrgency" >
+        <unionChoice name="SystemLevelId" ctrlField="xxx" inRangeLow="0" inRangeHigh="3" />
+        <unionChoice name="CurrentUrgency" ctrlField="xxx" inRangeLow="4" inRangeHigh="255"  />
+      </unionSet>
+    </unionSets>
+
+    <!-- Rendering describes how to generate an output file -->
+    <RenderDescriptions>
+      <RenderDescription name="SimpleAA" >
+        <RenderField name="sysLvlId_currUrgency/SystemLevelId" order="yy" header="zz" />
+      </RenderDescription>
+      <RenderDescription name="DetailedBB" >
+        <RenderField name="xx" order="yy" header="zz" />
+      </RenderDescription>
+    </RenderDescriptions>
+
+  </LogDefinition>
+</LogDefinitions>

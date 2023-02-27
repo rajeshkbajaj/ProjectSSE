@@ -1,0 +1,43 @@
+{
+  "CommsLogFilePath": "C:\\Logs\\Covidien\\ESS\\PB980\\Logs",
+  "TempPkgStorePath": "C:\\Logs\\Covidien\\ESS\\PB980\\TempPackages\\getSoftwarePackageOutput.pkg",
+  "TempSoftwareDownloadPath": "C:\\Logs\\Covidien\\ESS\\PB980\\VikingTFTPRoot",
+  "SoftwareSavedPath": "C:\\Logs\\Covidien\\ESS\\PB980\\SavedPackages",
+  "DownloadManifestFile": "config\\download.xml",
+  "BinariesFolder": "bin",
+  "ConfigFolder": "config",
+
+  "VentIpAddress": "192.168.0.12",
+  "VentPortNumber": 80,
+
+  "DefaultSWUpdatePkgName": "BdSoftware",
+  "DummyVentSerialNo": "35B1400283",
+
+  "CertificateSender": "E=rs.oasishelp@medtronic.com, CN=GW-Agent, OU=Medtronic, O=Medtronic, L=Boulder, S=Colorado, C=US",
+  "CertificateSubject": "E=rs.oasishelp@medtronic.com, CN=ESS-Cert, OU=Medtronic, O=Medtronic, L=Boulder, S=Colorado, C=US",
+  "CertificateStoreName": "My",
+  "CertificateStoreLocation": "LocalMachine",
+  "SecurityProtocolType": "Tls12",
+  "EssCertificateCommonName": "ESS",
+  "PrivateKeyContainerName": "ESS_KeyContainer",
+
+  "OasisAgentClientCertificateRenewalInDays": 60,
+  "OasisAgentPortNumber": 9020,
+  "OasisAgentMaxConnectAttempts": 3,
+  "OasisAgentRestOperationTimeoutInSeconds": 180,
+  "OasisServerAvailabilityTimeoutInMinutes": 15,
+  "OasisServerStatusCheckIntervalInMilliseconds": 1000,
+
+  "EssClientAppId": "AF15E9D1-6AA6-4A60-AF90-58ABABD9619F",
+
+  "LogFileUploadChunkSizeInBytes": 1048576,
+  "LogDefinitionFile": "VikingLogs-Group1.xml",
+  "LogInflationJsFile": "MakeHtmlTable.js",
+  "TempFilesExpireDays": 90,
+  "SplashScreenTimeOutInSec": 2,
+  "StartUpTimeOutInSec": 600,
+
+  "SeriLogsFilePath": "C:\\Logs\\Covidien\\ESS\\PB980\\Logs\\ESS_Application.log",
+
+  "LicenseInfoPath": "ESSLicense.info"
+}

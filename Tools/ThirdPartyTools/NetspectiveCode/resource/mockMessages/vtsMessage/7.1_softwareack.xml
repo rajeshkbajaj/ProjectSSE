@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<message schema_version='3644767c-2632-411a-9416-44f8a7dee08e' session_guid='SESSION_ID'>
+  <request type='postnotification' xaction_guid='6d21cdca-bbd3-4e38-aa9e-bb83d2b8b68f'>
+   <params>
+     <mailbox>3bd775ad-7250-42ff-adf4-188e0b691bff</mailbox>
+   </params>
+	<notification oid='378534e1-2ec5-410f-a6e3-fcf238d77efb'>
+		<header notification_type='event' notification_action='create'>
+			<pertinent_type>7a85f0c9-531e-4754-ad68-04c77ed63657/91dec715-f256-421a-8560-e6b015dae5f9</pertinent_type>
+			<pertinent_identifier>0a68ef98-7592-41c2-aacd-9e2760a3233d</pertinent_identifier>
+		</header>
+		<body>
+			<components>
+					<component type='SOFTWARE' >
+						<part_number>12345</part_number>
+						<revision_number>1.0</revision_number>
+					<timestamp>8/21/2012 1:37:36 PM</timestamp>
+					<status>installed</status>
+					</component>
+			</components>
+		</body>
+	</notification>
+  </request>
+</message>

@@ -1,0 +1,92 @@
+<!-- This will be a test ant build script for  ClinivisionConnector-->
+
+<project name="CGRC" default="all">
+	<taskdef resource = "vcTasks.properties" classpath="vcTasks"/>
+	<!-- In order to use the Try/Catch/Finally methods you need to install a jar file to the lib directory
+	of the Ant distribution that you are using. The zip file that is used in the Lamp builds is located in the BldTools\Utils folder
+	For more information: http://antelope.tigris.org/ -->
+	<taskdef name="try" classname="ise.antelope.tasks.TryTask"/>
+
+	<!--Path to build log-->
+	<!--<property name="basedir" value="${workingDir}"/>-->
+	<property name="buildLog" value="${basedir}Trunk\BldTools\cgrs_bld.log"/>
+	<property name="userId" value="svc.taboud.jazz" />
+	<property name="password" value="e:\svcPass.txt" />
+	<property name="MSTestsEXE" value="C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\MSTest.exe"/>
+	<property name="ThirdPartyTools" value="${basedir}ThirdPartyTools\"/>
+	<property name="ThirdPartyLibs" value="${basedir}source\src\ThirdPartyLibs\"/>
+	<property name="Dist" value="e:\Dist\${distname}\${buildlabel}\"/>
+	<property name="SrcFolder" value="${basedir}trunk\Source"/>
+	<property name="DistURL" value="file:////taboud-ap13.thcg.net/Dist/IPI-CGRS/${buildLabel}"/>
+		
+	<target name="all" depends="check-log-file, compile" />
+	
+	<target name="check-log-file" unless="file.exists">     
+		<available property="file.exists" file="cgrs_bld.log"/> 
+		<echo message="Check for existing build log and delete it."/>
+		<delete file="${build_log}"/>
+	</target> 
+	
+	<target name="compile">
+		<echo>
+			Base Dir = ${basedir}
+			Src Folder = ${SrcFolder}
+			Build Log = ${buildLog}
+			Build Label = ${buildlabel}
+			Dist = ${Dist}
+			VersionBuild Num = ${buildnum}
+		</echo>
+
+			<try break="no">
+							
+		<!-- Visual Studio 2010 (VC10) -->
+		<vc10 projectfolder="VC10" 
+			buildmode="Release|AnyCPU "
+			rebuild="true" 
+			logfile="${buildLog}">
+			<targets dir="${SrcFolder}" includes="CGRS.sln"/>
+		</vc10>    
+		
+			<catch>
+				<antcall target="BuildError"/>
+			</catch>
+			
+			<finally>
+				<antcall target="PubBldLog"/>
+			</finally>
+		</try>	
+
+
+						
+		<echo message="yes postbld deliver baseline"/>
+														
+	</target>
+	
+	<target name="BuildError">
+
+			<echo message="runBuild failed"/>	
+	</target>
+	
+	<target name="PubBldLog">
+			<!-- Publish the build log to Jazz. -->
+			<echo message="Publish the compile log..."/>
+			<mkdir dir="${Dist}"/>		  
+			<copy file="${buildLog}" todir="${Dist}\logs"/>
+	</target>
+	
+
+	
+
+	<target name="dist">
+		<copy todir="${Dist}\installer\">
+			<fileset dir="${SrcFolder}\VTSetup\Release"/>
+		</copy>
+		<copy todir="${Dist}\binaries\">
+			<fileset dir="${SrcFolder}\Release"/>
+		</copy>
+</target>
+	
+
+	
+
+</project>

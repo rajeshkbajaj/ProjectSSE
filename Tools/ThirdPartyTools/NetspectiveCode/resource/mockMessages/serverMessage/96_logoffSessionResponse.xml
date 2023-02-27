@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message session_guid="SESSION_ID" schema_version="3644767c-2632-411a-9416-44f8a7dee08e">
+    <response xaction_guid="23b2320b-6378-4013-80fb-a05ffe199e9c" type="ok">
+		<params>
+			<mailbox>12123432</mailbox>
+        </params>
+	</response>
+</message>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message schema_version="3644767c-2632-411a-9416-44f8a7dee08e">
+    <response xaction_guid="9650e555-810d-487b-94bf-da8d2f0e334e" type="ok">
+		<params><mailbox>12123432</mailbox></params>
+    </response>
+</message>

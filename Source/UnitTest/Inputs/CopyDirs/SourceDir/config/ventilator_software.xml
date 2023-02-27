@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<ventilator  standalone_install="true"> 
+
+    <!--
+    Software updates that need to be made by the GUI CPU.
+    -->
+    <replace uri="PB.GUI.FLASH.SERVICE" load="0xfe100000" size="6369192">
+        <package 
+            remote_path="bin/VikingServiceGui.bin.gz" 
+            hash_value="a97a548b2dd07a301cc93f6f81af404e" 
+            hash_type="md5"
+            part_number="10140988" 
+            revision="X01"
+            compression="true" />
+    </replace>
+
+    <replace uri="PB.GUI.FLASH.NORMAL" load="0xfd100000" size="8235587">
+        <package 
+			remote_path="bin/VikingGui.bin.gz" 
+            hash_value="3f81ebd941292cb26cdd8b912f545152" 
+			hash_type="md5" 
+			part_number="10140988" 
+            revision="X01"
+			compression="true" />
+    </replace>
+
+
+    <!--
+        Software updates that need to be made by the BD CPU.
+    -->
+    <replace uri="PB.BD.FLASH.NORMAL"  load="0xfd100000" size="1803216">
+        <package 
+			remote_path="bin/BdLoad.bin.gz" 
+            hash_value="040bf082dab06a56585f7e465bc9745d" 
+			hash_type="md5"
+			part_number="10140988" 
+            revision="X01"
+            compression="true" />
+    </replace>
+
+</ventilator> 
+

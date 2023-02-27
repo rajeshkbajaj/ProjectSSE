@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+	elementFormDefault="qualified"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="message"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:notification="notification"
+	xmlns:common="common"
+	xmlns="message">
+
+	<xsd:import namespace="common"     schemaLocation="CDMP_common.xsd"    />
+	<xsd:import namespace="notification" schemaLocation="CDMP_notification.xsd"/>
+
+	<!--
+This message that allows for interaction with a queueing service tageted twards enabling an application to communicate with a remote endpoint in a disconnected mode. 
+-->
+	<xsd:element name="message">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">The message element is the root of the Covidien CDMP protocol. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="1">
+				<xsd:element ref="request"/>
+				<xsd:element ref="response"/>
+			</xsd:choice>
+			<xsd:attribute name="schema_version" type="common:GUID" use="required"/>
+			<xsd:attribute name="session_guid" type="common:GUID" default="00000000-0000-0000-0000-000000000000"/>
+			<xsd:anyAttribute/>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+	<xsd:element name="request">
+		<xsd:annotation>
+			<xsd:documentation>A request element is a container for a seirlised remote procedure call.  Every request results in a response. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="1">
+				<xsd:element ref="params"/>
+			</xsd:choice>
+			<xsd:attribute name="xaction_guid" type="common:GUID" default="00000000-0000-0000-0000-000000000000"/>
+			<xsd:attribute name="type" type="REQUEST_TYPE" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:element name="response">
+		<xsd:annotation>
+			<xsd:documentation>A response element is a container for a seirlised response to a remote procedure call. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:choice minOccurs="0" maxOccurs="1">
+				<!--<xsd:element ref="error"/>-->
+				<xsd:element ref="params"/>
+				<xsd:element ref="notifications"/>
+				<xsd:element ref="headers"/>
+			</xsd:choice>
+			<xsd:attribute name="xaction_guid" type="common:GUID" default="00000000-0000-0000-0000-000000000000"/>
+			<xsd:attribute name="type" type="RESPONSE_TYPE" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:simpleType name="RESPONSE_TYPE">
+		<xsd:annotation>
+			<xsd:documentation>Type of response.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="param"/>
+			<xsd:enumeration value="headers"/>
+			<xsd:enumeration value="notifications"/>
+			<xsd:enumeration value="ok"/>
+			<xsd:enumeration value="bad"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+	<xsd:simpleType name="REQUEST_TYPE">
+		<xsd:annotation>
+			<xsd:documentation>Type of request.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="createsession"/>
+			<xsd:enumeration value="opensession"/>
+			<xsd:enumeration value="closesession"/>
+			<xsd:enumeration value="login"/>
+			<xsd:enumeration value="logoff"/>
+
+			<!--Device Management -->
+			<xsd:enumeration value="createdevice"/>
+			<xsd:enumeration value="deletedevice"/>
+			<xsd:enumeration value="getdevicelist"/>
+			<xsd:enumeration value="statdevice"/>
+			<!--
+			        Notification Management 
+			 -->
+			<!--Mark a notification for deletion.                              -->
+			<xsd:enumeration value="deletenotification"/>
+
+			<!--Unmark the message which is marked deleted      -->
+			<xsd:enumeration value="undeletenotification"/>
+
+			<!--Update the header and/or body of a notification.  -->
+			<xsd:enumeration value="updatenotification"/>
+
+			<!--Delete all notifications marked for deletion            -->
+			<xsd:enumeration value="expunge"/>
+
+			<!--Returns headers for all notifications in a mailbox.  -->
+			<xsd:enumeration value="getheaders"/>
+
+			<!--Returns time since last update.                              -->
+			<xsd:enumeration value="getmailboxinfo"/>
+
+			<!--Post a notification to a givent mailbox.                   -->
+			<xsd:enumeration value="postnotification"/>
+
+
+			<!--Get a notification to a givent mailbox.                   -->
+			<xsd:enumeration value="getnotification"/>
+
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+
+
+
+
+	<xsd:element name="params">
+		<xsd:complexType>
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">The params element is a container for param and notification elements.  It is used only in Command messages.</xsd:documentation>
+			</xsd:annotation>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:choice minOccurs="0" maxOccurs="1">
+					<xsd:element ref="param" minOccurs="0" maxOccurs="1">
+						<xsd:annotation>
+							<xsd:documentation>A param element is a container to hold a vairent parameter string.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element ref="notification:notification" minOccurs="0" maxOccurs="1"/>
+				</xsd:choice>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+
+	<xsd:element name="notifications">
+		<xsd:complexType>
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">The notifications element is a container for notification elements.</xsd:documentation>
+			</xsd:annotation>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:element ref="notification:notification" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:element name="headers">
+		<xsd:complexType>
+			<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+				<xsd:element ref="notification:notification" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:element name="param">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">A param element is a container to hold a parameter string.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType mixed="true">
+			<xsd:attribute name="name" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:enumeration value="mailbox"/>
+						<xsd:enumeration value="reason"/>
+						<xsd:enumeration value="session"/>
+						<xsd:enumeration value="device_uri"/>
+						<xsd:enumeration value="username"/>
+						<xsd:enumeration value="password"/>
+						<xsd:enumeration value="notification_oid"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

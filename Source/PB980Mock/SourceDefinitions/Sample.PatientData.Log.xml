@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LogFile name="PatientData" >
+  <head>
+    <meta http-equiv="Content-Type" content="application/pbVentLog-patientdata;ver=1.0" />
+    <meta http-equiv="Transfer-Encoding" content="base64" />
+  </head>
+  <body>
+    AAAACxEGEwEAAABRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAAABAAAAEOEAEOFwAAAPMAAADzAAABDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFFAglEQNaDAUUCCURA3QAAAABAAAGUw==
+  </body>
+</LogFile>
+</LogFiles>

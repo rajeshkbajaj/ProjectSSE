@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message schema_version="3644767c-2632-411a-9416-44f8a7dee08e"
+	session_guid='SESSION_ID'>
+	<request type='logoff' xaction_guid='23b2320b-6378-4013-80fb-a05ffe199e9c'>
+		<params>
+			<device_uri>{PB980_Ventilator}/{SESSION_ID}</device_uri>
+			<username>system1</username>
+		</params>
+	</request>
+</message>

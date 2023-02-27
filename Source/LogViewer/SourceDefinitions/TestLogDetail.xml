@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LogDescription>
+  <Fields>
+    <Field dataOrder="0" displayOrder="0" id="sysLvlId_currUrgency" dataType="UInt8" actualDataType="Uint8" bitOrder="big" byteOrder="network" reportHeader="Id/Urg" enumDecoding="true" supportData="SysId_Urgency_Enums" />
+    <Field dataOrder="1" displayOrder="1" id="baseMessage" dataType="UInt8" actualDataType="Uint8" bitOrder="big" byteOrder="network" reportHeader="Base Message" enumDecoding="" supportData="AlarmBaseMessage_Enums" />
+    <Field dataOrder="2" displayOrder="2" id="analysisIndex" dataType="UInt8" bitOrder="Uint8" byteOrder="network" reportHeader="Analysis Index" enumDecoding="" supportData="" />
+    <Field dataOrder="3" displayOrder="3" id="updateType" dataType="UInt8" bitOrder="Uint8" byteOrder="network" reportHeader="Updaet Type" enumDecoding="" supportData="AlarmUpdateType_Enums" />
+    <Field dataOrder="4" displayOrder="4" id="whenOccurred" dataType="UInt32" bitOrder="TimeStamp" byteOrder="network" reportHeader="When" enumDecoding="" supportData="" />
+    <Field dataOrder="5" displayOrder="5" id="arrMsgs" dataType="UInt16[6]" bitOrder="Uint8" byteOrder="network" reportHeader="Arr Msgs" enumDecoding="" supportData="" />
+    <Field dataOrder="6" displayOrder="-1" id="paddingBlock" dataType="UInt16" bitOrder="big" byteOrder="network" reportHeader="Padding Block" enumDecoding="" supportData="" display="true" />
+    <Field dataOrder="7" displayOrder="-1" id="entryCrc" dataType="UInt16" bitOrder="big" byteOrder="network" reportHeader="CRC" enumDecoding="" supportData="" display="true" />
+  </Fields>
+</LogDescription>

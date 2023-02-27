@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EXTEND_ENHANCED_SERVICE_MODE_QUESTION" xml:space="preserve">
+    <value>Extend Enhanced Service Mode?</value>
+  </data>
+  <data name="BROWSE_TO_UPDATE_DEVICE" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="APP_CLOSE_MSGBOX_TEXT_EULA_ERROR" xml:space="preserve">
+    <value>Error loading Software License Agreement. Application will close.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="VTS_Splash_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\VTS_Splash_Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RSA_SESSION_OPEN_FAILURE" xml:space="preserve">
+    <value>Server Session Not Available</value>
+  </data>
+  <data name="DOCUMENT_CLOSE_ERROR" xml:space="preserve">
+    <value>Document close error</value>
+  </data>
+  <data name="RSA_CONNECT_SUCCESS" xml:space="preserve">
+    <value>Connected To Agent</value>
+  </data>
+  <data name="PB980_VENTILATOR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PB980.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SW_UPLOAD_DONE_MSGBOX_TEXT" xml:space="preserve">
+    <value>Device update succeeded. To complete device update, please do the following:
+a) Power off the ventilator and disconnect AC power
+b) Remove and re-install ventilator batteries
+c) Reconnect AC power and restart ventilator in Service Mode
+d) Reconnect ESS to the ventilator</value>
+  </data>
+  <data name="DEVICE_LOG_RETRIEVAL_FAILURE" xml:space="preserve">
+    <value>Logs Retrieval From Device Failed</value>
+  </data>
+  <data name="DOWNLOAD_MODE" xml:space="preserve">
+    <value>Download Mode</value>
+  </data>
+  <data name="AUTHENTICATION_REQUIRED_FOR_SW" xml:space="preserve">
+    <value>Authentication required for software update</value>
+  </data>
+  <data name="SW_UPLOAD_FAILED_MSGBOX_TEXT" xml:space="preserve">
+    <value>Device Update Failure</value>
+  </data>
+  <data name="_980_connectivity_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\980_connectivity_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RSA_SESSION_OPEN_SUCCESS" xml:space="preserve">
+    <value>Connected To Server</value>
+  </data>
+  <data name="DOCUMENT_CONTROL" xml:space="preserve">
+    <value>Document Control</value>
+  </data>
+  <data name="OVERRIDE_EST_QUESTION" xml:space="preserve">
+    <value>Override EST?</value>
+  </data>
+  <data name="PACKAGE_NOT_AVAILABLE" xml:space="preserve">
+    <value>Not Available</value>
+  </data>
+  <data name="LOAD_LOCAL_FILE" xml:space="preserve">
+    <value>&lt;Select Local File&gt;</value>
+  </data>
+  <data name="EST_PERFORMED_DATE" xml:space="preserve">
+    <value>EST performed on</value>
+  </data>
+  <data name="logo_covidien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\logo_covidien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="APP_CLOSE_MSGBOX_TITLE" xml:space="preserve">
+    <value>Close Confirmation</value>
+  </data>
+  <data name="LOG_VIEW_FORM_TITLE" xml:space="preserve">
+    <value>Log Viewer</value>
+  </data>
+  <data name="DEVICE_DISCONNECTED_STATUS" xml:space="preserve">
+    <value>Device Disconnected</value>
+  </data>
+  <data name="LOGOUT_BUTTON" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="USER_NAME_LABEL" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="VIEW_LOGS_BUTTON" xml:space="preserve">
+    <value>View Logs</value>
+  </data>
+  <data name="STATUS_CONNECTED" xml:space="preserve">
+    <value>Connected</value>
+  </data>
+  <data name="SW_UPLOAD_START_BUTTON" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="DEVICE_SETTING_FAILURE" xml:space="preserve">
+    <value>Service Parameter Update Failed</value>
+  </data>
+  <data name="STATUS_COMPLETE" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="SW_UPDATE_REQUESTING_PACKAGE_LIST_STATUS_MSG" xml:space="preserve">
+    <value>Checking For Device Update Packages...</value>
+  </data>
+  <data name="SW_UPLOAD_DIALOG_TITLE" xml:space="preserve">
+    <value>Software Upload</value>
+  </data>
+  <data name="SAVE_TO_FILE_BUTTON" xml:space="preserve">
+    <value>Save to File</value>
+  </data>
+  <data name="RSA_CONNECT" xml:space="preserve">
+    <value>Connecting to Agent</value>
+  </data>
+  <data name="DEVICE_LOG_RETRIEVAL_SUCCESS" xml:space="preserve">
+    <value>Logs Retrieval From Device Succeeded</value>
+  </data>
+  <data name="SW_UPLOAD_SELECT_DOCUMENT_LABEL" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="WORK_LIST_BUTTON" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="SW_UPLOAD_CANCEL_BUTTON" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DEVICE_REGISTRATION_FAILURE" xml:space="preserve">
+    <value>Device Registration Failed</value>
+  </data>
+  <data name="_980_connectivity_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\980_connectivity_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STATUS_RECEIVING" xml:space="preserve">
+    <value>Receiving</value>
+  </data>
+  <data name="STATUS_DOWNLOADING" xml:space="preserve">
+    <value>Downloading.</value>
+  </data>
+  <data name="STATUS_DOWNLOADING_HALT" xml:space="preserve">
+    <value>Downloading halted.</value>
+  </data>
+  <data name="STATUS_DO_NOT_DISCONNECT" xml:space="preserve">
+    <value>Do not disconnect internet</value>
+  </data>
+  <data name="STATUS_CONNECT_INTERNET" xml:space="preserve">
+    <value>Connect internet</value>
+  </data>
+  <data name="STATUS_INSUFFICIENTSPACE" xml:space="preserve">
+    <value>Insufficient space on disk</value>
+  </data>
+  <data name="LOGGEDIN_BUTTON" xml:space="preserve">
+    <value>Logged in</value>
+  </data>
+  <data name="COMPRESSOR_SERIAL_NUMBER" xml:space="preserve">
+    <value>Compressor Serial Number</value>
+  </data>
+  <data name="SAVE_FILE_DIALOG_TITLE" xml:space="preserve">
+    <value>Save Log File,</value>
+  </data>
+  <data name="USER_LOGOUT_BUTTON_TEXT" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="USER_LOGIN_BUTTON_TEXT" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MESSAGE_BOX_CONFIRMATION_TITLE_STRING" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="UPLOAD_TO_SERVER_FAILURE" xml:space="preserve">
+    <value>Upload To Server Failure</value>
+  </data>
+  <data name="RSA_CLOSE_SESSION" xml:space="preserve">
+    <value>Closing Session</value>
+  </data>
+  <data name="GET_LOG_BUTTON" xml:space="preserve">
+    <value>Get Log</value>
+  </data>
+  <data name="VTS_Branding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\VTS_Branding.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLOSE_BUTTON" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SECONDS_REMAINING" xml:space="preserve">
+    <value>Second(s) Remaining</value>
+  </data>
+  <data name="AUTHENTICATING" xml:space="preserve">
+    <value>Authenticating...</value>
+  </data>
+  <data name="APP_CLOSE_MSGBOX_TEXT_EULA_CANCEL" xml:space="preserve">
+    <value>Software License Agreement acceptance needed to continue. Do you want to close the application?</value>
+  </data>
+  <data name="USER_AUTHENTICATION_REQUEST" xml:space="preserve">
+    <value>Authenticating User</value>
+  </data>
+  <data name="SAVE_FILE_DIALOG_FILTER" xml:space="preserve">
+    <value>Comma Separated Value|*.csv|XML|*.xml|All Files|*.*</value>
+  </data>
+  <data name="REQUESTING_STATUS" xml:space="preserve">
+    <value>Requesting ...</value>
+  </data>
+  <data name="VENTILATOR_OP_HOURS" xml:space="preserve">
+    <value>Ventilator Operational Hours</value>
+  </data>
+  <data name="LOGOUT_MSGBOX_TEXT" xml:space="preserve">
+    <value>Confirm log out request</value>
+  </data>
+  <data name="LOG_NAME_POSTPEND" xml:space="preserve">
+    <value> log</value>
+  </data>
+  <data name="EST_STATUS" xml:space="preserve">
+    <value>EST Status</value>
+  </data>
+  <data name="DEVICE_WORK_LIST_TITLE" xml:space="preserve">
+    <value>Device Work List</value>
+  </data>
+  <data name="FILE_NOT_FOUND_ERROR_MSG" xml:space="preserve">
+    <value>File not found</value>
+  </data>
+  <data name="DEVICE_SETTING_SUCCESS" xml:space="preserve">
+    <value>Service Parameter Update Succeeded</value>
+  </data>
+  <data name="DEVICE_OPEN_SESSION" xml:space="preserve">
+    <value>Opening Session</value>
+  </data>
+  <data name="DIAGNOSTIC_LOGS_UPLOAD_FAILURE" xml:space="preserve">
+    <value>Diagnostic Logs Upload Failure. Restart ESS Application.</value>
+  </data>
+  <data name="PB980_ESS_splash_screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PB980_ESS_splash_screen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SW_UPDATE_FLASH_DEVICE_BUTTON" xml:space="preserve">
+    <value>Proceed</value>
+  </data>
+  <data name="STATUS_IDLE" xml:space="preserve">
+    <value>Idle</value>
+  </data>
+  <data name="SW_PACKAGE_DOWNLOAD_COMPLETE" xml:space="preserve">
+    <value>Device Update Packages Download Completed</value>
+  </data>
+  <data name="PACKAGES_AVAILABLE_LABEL" xml:space="preserve">
+    <value>Packages Available</value>
+  </data>
+  <data name="DEVICE_SERIAL_NUMBER" xml:space="preserve">
+    <value>Device Serial Number:</value>
+  </data>
+  <data name="STATUS_ERROR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TRANSLATE_LOG_MSG" xml:space="preserve">
+    <value>Requesting translation of log,</value>
+  </data>
+  <data name="PB980_back_wo_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PB980_back_wo_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEVICE_SETTING_RETRIEVAL_ERROR" xml:space="preserve">
+    <value>Service Parameter Retrieval Failed</value>
+  </data>
+  <data name="SW_UPLOAD_DONE_MSGBOX_TITLE" xml:space="preserve">
+    <value>Device Update Succeeded</value>
+  </data>
+  <data name="AUTHENTICATION_FAILURE" xml:space="preserve">
+    <value>Authentication Failure</value>
+  </data>
+  <data name="DEV_INFO_SW_UPDATE" xml:space="preserve">
+    <value>Software Update</value>
+  </data>
+  <data name="DOCUMENT_OPEN_ERROR" xml:space="preserve">
+    <value>Document open error</value>
+  </data>
+  <data name="PB980_back_w_arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PB980_back_w_arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PB980_connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PB980-connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="REQUESTING_DEVICE_LOGS_STATUS_MSG" xml:space="preserve">
+    <value>Retrieving Logs From The Device</value>
+  </data>
+  <data name="RSA_AGENT_STATUS" xml:space="preserve">
+    <value>Agent Status</value>
+  </data>
+  <data name="LOGOUT_MSGBOX_TITLE" xml:space="preserve">
+    <value>Exit Confirmation</value>
+  </data>
+  <data name="DEVICE_CONNECT_SUCCESS" xml:space="preserve">
+    <value>Connected To Device</value>
+  </data>
+  <data name="STATUS_RUNNING" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="STATUS_DISCONNECTED" xml:space="preserve">
+    <value>Disconnected</value>
+  </data>
+  <data name="_980_connectivity_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\980_connectivity_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEV_INFO_SW_VER" xml:space="preserve">
+    <value>SW Revision:</value>
+  </data>
+  <data name="FAILED_STATUS" xml:space="preserve">
+    <value>Failed to retrieve</value>
+  </data>
+  <data name="ADD_BUTTON" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="SERVICE_MODE" xml:space="preserve">
+    <value>Service Mode</value>
+  </data>
+  <data name="INDIVIDUAL_DEVICES_LABEL" xml:space="preserve">
+    <value>Individual Devices</value>
+  </data>
+  <data name="VENTILATOR_PM_HOURS" xml:space="preserve">
+    <value>Ventilator Preventative Maintenance Hours</value>
+  </data>
+  <data name="AUTHENTICATION_REQUIRED" xml:space="preserve">
+    <value>Authentication required</value>
+  </data>
+  <data name="DEVICE_REGISTRATION_INPROGRESS" xml:space="preserve">
+    <value>Device Registration In Progress...</value>
+  </data>
+  <data name="PASSWORD_LABEL" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RSA_OPEN_SESSION" xml:space="preserve">
+    <value>Opening Session</value>
+  </data>
+  <data name="DEVICE_LOG_UPLOAD_LOGIN_REQUIRED" xml:space="preserve">
+    <value>Login Required to Upload Logs To Server</value>
+  </data>
+  <data name="DEVICE_SETTING_RETRIEVAL_SUCCESS" xml:space="preserve">
+    <value>Service Parameter Retrieval Succeeded</value>
+  </data>
+  <data name="DEVICE_CONNECTED_STATUS" xml:space="preserve">
+    <value>Device Connected</value>
+  </data>
+  <data name="DEVICE_CONNECT_FAILURE" xml:space="preserve">
+    <value>Connection To Device Failed</value>
+  </data>
+  <data name="DEVICE_LOG_UPLOAD_FAILURE" xml:space="preserve">
+    <value>Logs Upload Failure. Restart ESS Application.</value>
+  </data>
+  <data name="DEVICE_KEY_TYPE" xml:space="preserve">
+    <value>DataKey:</value>
+  </data>
+  <data name="DEV_INFO_MODEL" xml:space="preserve">
+    <value>Model:</value>
+  </data>
+  <data name="LOGIN_BUTTON" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="GET_LOG_MSG" xml:space="preserve">
+    <value>Requesting log,</value>
+  </data>
+  <data name="LOG_UPLOADED_STATUS" xml:space="preserve">
+    <value>Uploaded</value>
+  </data>
+  <data name="AUTHENTICATION_FAILED" xml:space="preserve">
+    <value>User Name/Password not recognized</value>
+  </data>
+  <data name="DOCUMENTS_LABEL" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="DIAGNOSTIC_LOGS_UPLOAD_INPROGRESS" xml:space="preserve">
+    <value>Diagnostic Logs Upload In Progress...</value>
+  </data>
+  <data name="SW_UPDATE_SELECT_PACKAGE" xml:space="preserve">
+    <value>Packages</value>
+  </data>
+  <data name="AGENT_STATUS_UPLOAD" xml:space="preserve">
+    <value>Agent Upload: </value>
+  </data>
+  <data name="CLEAR_BUTTON" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="SW_PACKAGE_DOWNLOAD_FAILURE" xml:space="preserve">
+    <value>Device Update Packages Download Failed. Restart ESS Application.</value>
+  </data>
+  <data name="DEVICE_TYPES_LABEL" xml:space="preserve">
+    <value>Device Types</value>
+  </data>
+  <data name="CONNECT_BUTTON" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="SW_UPLOAD_FAILED_MSGBOX_TITLE" xml:space="preserve">
+    <value>Device Update Failed</value>
+  </data>
+  <data name="UNKNOWN_STATUS" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="DOCUMENT_DELETE_ERROR" xml:space="preserve">
+    <value>Document delete error</value>
+  </data>
+  <data name="VERSION_LABEL" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="DEVICE_LOGS_UPLOAD_INPROGRESS" xml:space="preserve">
+    <value>Logs Upload In Progress...</value>
+  </data>
+  <data name="DISCONNECT_BUTTON" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="SW_UPDATE_CURRENT_VERSION" xml:space="preserve">
+    <value>Current Version</value>
+  </data>
+  <data name="STATUS_SCHEDULED" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+  <data name="RSA_CONNECT_FAILURE" xml:space="preserve">
+    <value>Connection To Agent Failed</value>
+  </data>
+  <data name="_980_connectivity_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\980_connectivity_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STATUS_UNAVAILABLE" xml:space="preserve">
+    <value>Unavailable</value>
+  </data>
+  <data name="DEVICE_INFO" xml:space="preserve">
+    <value>Device Info</value>
+  </data>
+  <data name="MISSING_LOGIN_CREDENTIALS" xml:space="preserve">
+    <value>Both username and password are required</value>
+  </data>
+  <data name="SW_PACKAGE_DOWNLOAD_INPROGRESS" xml:space="preserve">
+    <value>Device Update Packages Download In Progress...</value>
+  </data>
+  <data name="DATA_KEY" xml:space="preserve">
+    <value>Datakey</value>
+  </data>
+  <data name="AGENT_STATUS_DOWNLOAD" xml:space="preserve">
+    <value>Agent Download: </value>
+  </data>
+  <data name="CANCEL_BUTTON" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="_980_connectivity_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\980_connectivity_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PB980ESSicon_text_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PB980ESSicon-text-64.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DEV_INFO_SN" xml:space="preserve">
+    <value>Serial Num:</value>
+  </data>
+  <data name="DEVICE_LOG_UPLOAD_SUCCESS" xml:space="preserve">
+    <value>Logs Upload Successful</value>
+  </data>
+  <data name="ADD_DEVICE_BUTTON" xml:space="preserve">
+    <value>Add Device</value>
+  </data>
+  <data name="UPLOAD_LOG_BUTTON" xml:space="preserve">
+    <value>Upload Log</value>
+  </data>
+  <data name="DEVICE_NOT_REGISTERED" xml:space="preserve">
+    <value>Device Not Verified</value>
+  </data>
+  <data name="CONNECTING_STATUS_MSG" xml:space="preserve">
+    <value>Connecting To Device</value>
+  </data>
+  <data name="SW_UPDATE_VIEW_DOCUMENT_BUTTON" xml:space="preserve">
+    <value>View Document</value>
+  </data>
+  <data name="CHOOSE_DOCUMENTS_DIALOG" xml:space="preserve">
+    <value>Choose Documents Dialog</value>
+  </data>
+  <data name="APP_CLOSE_MSGBOX_TEXT" xml:space="preserve">
+    <value>Do you want to close the application?</value>
+  </data>
+  <data name="STATUS_ACTIVE" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="NOTES_VIEWER_FORM_TITLE" xml:space="preserve">
+    <value>Notes Viewer</value>
+  </data>
+  <data name="SW_UPDATE_FLASHING_STATUS_MSG" xml:space="preserve">
+    <value>Updating Device</value>
+  </data>
+  <data name="COMPRESSOR_OP_HOURS" xml:space="preserve">
+    <value>Compressor Operational Hours</value>
+  </data>
+  <data name="DIAGNOSTIC_LOGS_UPLOAD_SUCCESS" xml:space="preserve">
+    <value>Diagnostic Logs Upload Successful</value>
+  </data>
+  <data name="LOADED_STATUS" xml:space="preserve">
+    <value>Loaded</value>
+  </data>
+  <data name="COMPRESSOR_PM_HOURS" xml:space="preserve">
+    <value>Compressor Preventative Maintenance Hours</value>
+  </data>
+  <data name="CONNECTING_BUTTON" xml:space="preserve">
+    <value>Connecting...</value>
+  </data>
+  <data name="PB980_faded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\PB980-faded.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STATUS_UNKNOWN" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="VIEW_BUTTON" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="STATUS_TRANSMITTING" xml:space="preserve">
+    <value>Transmitting</value>
+  </data>
+  <data name="MESSAGE_BOX_CONFIRMATION_TEXT_STRING" xml:space="preserve">
+    <value>Are you sure you want to submit the changes?</value>
+  </data>
+  <data name="ESS_Branding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ESS_Branding.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CLEAR_LOGS_CONFIRMATION_MSG" xml:space="preserve">
+    <value>Clear logs on the device?</value>
+  </data>
+  <data name="ESS_TITLE" xml:space="preserve">
+    <value>ESS</value>
+  </data>
+  <data name="FUNCTION_RESTRICTED_MSG" xml:space="preserve">
+    <value>Requested function is restricted</value>
+  </data>
+  <data name="NO_AGENT_APPLICATION_CLOSE_MSG1" xml:space="preserve">
+    <value>Agent service is not detected or unresponsive.</value>
+  </data>
+  <data name="NO_AGENT_APPLICATION_CLOSE_MSG2" xml:space="preserve">
+    <value>Please check the internet connection. Application will close.</value>
+  </data>
+  <data name="DEVICE_SETTING_RETRIEVAL_IN_PROGRESS" xml:space="preserve">
+    <value>Service parameter retrieval from device is in progress...</value>
+  </data>
+  <data name="DEVICE_PARAMETER_SETTING_IN_PROGRESS" xml:space="preserve">
+    <value>Service parameter update on device in progress...</value>
+  </data>
+  <data name="SOFTWARE_PACKAGE_INVALID" xml:space="preserve">
+    <value>Invalid Update Package</value>
+  </data>
+  <data name="SOFTWARE_UPDATE_TO_STRING" xml:space="preserve">
+    <value>Selected Package: </value>
+  </data>
+  <data name="DEVICE_CONNECT_FAILURE_MESSAGE" xml:space="preserve">
+    <value>Connection Failed. Please check connection and settings.</value>
+  </data>
+  <data name="DEVICE_DISCONNECT_CONFIRM_MESSAGE" xml:space="preserve">
+    <value>Do you want to disconnect from the device?</value>
+  </data>
+  <data name="DEVICE_NOT_REACHABLE_MESSAGE" xml:space="preserve">
+    <value>Device not reachable. Please check connection and settings.</value>
+  </data>
+  <data name="UPDATE_COMPLETE" xml:space="preserve">
+    <value>Update Complete</value>
+  </data>
+  <data name="UPDATE_DONE" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="SW_OTHERPACKAGE_DOWNLOAD_DONE_MSGBOX_TEXT" xml:space="preserve">
+    <value>Device Package Download succeeded. Location is  </value>
+  </data>
+  <data name="SW_OTHERPACKAGE_DOWNLOAD_FAILED_MSGBOX_TEXT" xml:space="preserve">
+    <value>Device Package Download Failed</value>
+  </data>
+  <data name="DEV_INFO_SW_PARTNUM" xml:space="preserve">
+    <value>SW Part Num:</value>
+  </data>
+  <data name="SPLASH_SCREEN_AUTHENITICATE_WAIT" xml:space="preserve">
+    <value>Authentication is in progress. Please wait..</value>
+  </data>
+  <data name="AUTH_RESPONSE_USER_CANCEL" xml:space="preserve">
+    <value>UserCancel</value>
+  </data>
+  <data name="LOGIN_FAILED_RELOGIN" xml:space="preserve">
+    <value>Failed to login. Redirecting to login screen</value>
+  </data>
+  <data name="PASSCODE_NOT_MATCH" xml:space="preserve">
+    <value>Passcode didn't match</value>
+  </data>
+  <data name="SETTINGS_OFFLINE_CHANGE_PASSWORD_FAILURE" xml:space="preserve">
+    <value>Offline passcode change is Failed</value>
+  </data>
+  <data name="SETTINGS_OFFLINE_CHANGE_PASSWORD_SUCCESS" xml:space="preserve">
+    <value>Offline passcode changed successfully</value>
+  </data>
+  <data name="SETTINGS_STATUS_ALLOWED_IN_ONLINE" xml:space="preserve">
+    <value>Change offline passcode is allowed only with online login</value>
+  </data>
+  <data name="AUTH_INVALID_OR_CANCEL" xml:space="preserve">
+    <value>Either User Cancelled or Invalid Authorization.</value>
+  </data>
+  <data name="AUTH_INVALID_USERTYPE" xml:space="preserve">
+    <value>OAuth2LoginManager::Login Invalid Usertype:</value>
+  </data>
+  <data name="AUTH_SERVER_NOT_AVAILABLE" xml:space="preserve">
+    <value>OAuth2LoginManager::Login Server Not Available</value>
+  </data>
+  <data name="LOG_VIEW_UNABLE_READ_FILE" xml:space="preserve">
+    <value>Error: Could not read file from disk.</value>
+  </data>
+  <data name="RSA_ALL_REQUESTS_NOT_COMPLETED_WARNING" xml:space="preserve">
+    <value>All server requests not completed. Close anyway?</value>
+  </data>
+  <data name="RSA_WAITING_ON_SERVER" xml:space="preserve">
+    <value>Waiting on Server</value>
+  </data>
+  <data name="BACK_BUTTON" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="FUNCTIONALITY_DISABLED_USING_DUMMY_DEVICE" xml:space="preserve">
+    <value>Device is not connected and this functionality is disabled</value>
+  </data>
+</root>

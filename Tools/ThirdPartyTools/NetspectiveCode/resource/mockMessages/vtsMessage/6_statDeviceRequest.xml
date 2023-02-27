@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message schema_version="3644767c-2632-411a-9416-44f8a7dee08e" session_guid='SESSION_ID'>
+   <request type='statdevice' xaction_guid='55c26878-90fb-4a4a-aa1f-3a689310771e'>
+      <params>
+        	<device_uri>{PB980_Ventilator}/{SESSION_ID}</device_uri>
+     		<country>United States</country>
+		</params>
+		<notification oid='dc308fde-bf9a-4c6f-9ef0-f41cb499c8e1'>
+				<header notification_type='event' notification_action='create'>
+					<pertinent_type>7a85f0c9-531e-4754-ad68-04c77ed63657/532ffdda-6f38-41da-9a40-cb0801e6695f</pertinent_type>
+					<pertinent_identifier>123 2312421</pertinent_identifier>
+				</header>
+				<body>
+					<components>
+					<component type='SOFTWARE'>
+						<name>Ventilator</name>
+						<part_number>Part123</part_number>
+						<revision_number>VIKING_3.1.0.58</revision_number>
+						<serial_number></serial_number>
+					</component>
+					<component type='HARDWARE'>
+						<name>Ventilator</name>
+						<part_number>Part123</part_number>
+						<revision_number>1.1.1</revision_number>
+						<serial_number>35B1203041</serial_number>
+					</component>
+					<component type='HARDWARE'>
+						<name>GUI_PCBA</name>
+						<part_number>Part456</part_number>
+						<revision_number>1.A.4</revision_number>
+						<serial_number>35B1203041</serial_number>
+					</component>
+					</components>
+			</body>
+		</notification>
+   </request>
+</message>

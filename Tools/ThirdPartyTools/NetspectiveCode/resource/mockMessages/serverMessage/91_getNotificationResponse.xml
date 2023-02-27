@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message schema_version="random_value" session_guid='SESSION_ID' >
+   <response type='notifications'
+      xaction_guid='random_value'>
+      <notifications>
+         <notification oid='random_value'>
+            <header notification_type='command' notification_action='set'>
+               <pertinent_type>{DEVICE_CLASSFICATION}/{TYPE_CLASSIFICATION}</pertinent_type>
+               <pertinent_identifier>{SERIAL_NUMBER}</pertinent_identifier>
+               <notification_id>random_value</notification_id>
+            </header>
+            <body>
+				<uri>https://vicareplus.com/checkstyle-5.5-src.tar.gz</uri>
+				<software_version>SOFTWARE_VERSION</software_version>
+				<file_size>744854</file_size>
+				<md5sum>29f896d8ff7c6eb3dcf1dd89d7b30a62</md5sum>
+				<software>SOFTWARE</software>
+				<version>1.4</version>
+				<update_type>SOFTWARE_UPDATE</update_type>
+				<expiration>24</expiration>
+		    </body>
+         </notification>
+      </notifications>
+   </response>
+</message>

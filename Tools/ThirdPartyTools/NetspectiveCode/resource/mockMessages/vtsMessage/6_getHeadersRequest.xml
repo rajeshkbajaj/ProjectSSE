@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message schema_version="random_value" session_guid="SESSION_ID">
+	<request type='getheaders' xaction_guid="random_value">
+		<params>
+			<device_uri>ForceTriad/SESSION_ID</device_uri>
+			<hardware>VISTA</hardware>
+			<hardware_version>1.4</hardware_version>
+			<hardware_options>None</hardware_options>
+			<software_list>
+				<software>
+					<software_name>FEDORA</software_name>
+					<software_version>15</software_version>
+					<software_option>None</software_option>
+					<software_option_version>None</software_option_version>
+				</software>
+				<software>
+					<software_name>windows</software_name>
+					<software_version>1</software_version>
+					<software_option>None</software_option>
+					<software_option_version>None</software_option_version>
+				</software>
+			</software_list>
+		</params>
+	</request>
+</message>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message>
+    <devices>
+        <device device_type="7a85f0c9-531e-4754-ad68-04c77ed63657">
+            <is_Accessible>true</is_Accessible>
+            <components>
+                <component type="software">
+                    <name>PB.BD.FLASH.NORMAL</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X00</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X00</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X04</revision>
+                </component>
+                <component type="hardware">
+                    <name>MixAirFlowSensor</name>
+                    <part_number>840610</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>6101233040</serial_number>
+                    <revision>55</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10097144</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X05</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X05</revision>
+                </component>
+                <component type="hardware">
+                    <name>ExhFlowSensor</name>
+                    <part_number>840600</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>6001234007</serial_number>
+                    <revision>54</revision>
+                </component>
+            </components>
+            <last_update>Tue Nov 06 11:29:41 PST 2012</last_update>
+            <pertinent_identifier>35B12P3001</pertinent_identifier>
+        </device>
+        <device device_type="7a85f0c9-531e-4754-ad68-04c77ed63657">
+            <is_Accessible>false</is_Accessible>
+            <components>
+                <component type="hardware">
+                    <name>MixAirFlowSensor</name>
+                    <part_number>840610</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>6101219191</serial_number>
+                    <revision>55</revision>
+                </component>
+                <component type="hardware">
+                    <name>MixAirFlowSensor</name>
+                    <part_number>840610</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>6101219212</serial_number>
+                    <revision>55</revision>
+                </component>
+                <component type="hardware">
+                    <name>MixAirFlowSensor</name>
+                    <part_number>840610</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>6101219208</serial_number>
+                    <revision>55</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X00</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X00</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X00</revision>
+                </component>
+                <component type="software">
+                    <name>PB.BD.FLASH.NORMAL</name>
+                    <part_number>10090951</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X00</revision>
+                </component>
+                <component type="software">
+                    <name>PB.GUI.FLASH.SERVICE</name>
+                    <part_number>10097144</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>null</serial_number>
+                    <revision>X05</revision>
+                </component>
+                <component type="hardware">
+                    <name>ExhFlowSensor</name>
+                    <part_number>840600</part_number>
+                    <rights>
+                        <right>install</right>
+                        <right>remove</right>
+                    </rights>
+                    <serial_number>6001215075</serial_number>
+                    <revision>54</revision>
+                </component>
+            </components>
+            <last_update>Tue Nov 06 15:19:01 PST 2012</last_update>
+            <pertinent_identifier>980 112358</pertinent_identifier>
+        </device>
+    </devices>
+</message>

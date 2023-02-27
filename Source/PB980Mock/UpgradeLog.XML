@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PB980Mock">
+</Property><Property Name="Solution File" Value="C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\PB980Mock.sln">
+</Property><Property Name="Date" Value="Monday, August 06, 2012">
+</Property><Property Name="Time" Value="19:10:05">
+</Property></Properties><Event ErrorLevel="0" Project="PB980Mock" Source="PB980Mock.csproj" Description="Project file successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\PB980Mock.csproj">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\ErrorWebPage.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\ErrorWebPage.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Form1.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Form1.Designer.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\GetDeviceInformationAsXml.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\GetDeviceInformationAsXml.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="ILog.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\ILog.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\Line1WebServicesMain.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\Line1WebServicesMain.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Program.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="LogRichTextBox.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\LogRichTextBox.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\TestWebPage.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\TestWebPage.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\WebPage.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\WebPage.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\IWebPage.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\IWebPage.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\WebServer.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\WebServer.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\IWebService.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\IWebService.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\WebServicesAbstractBase.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\WebServicesAbstractBase.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="WebServices\Worker.cs" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\WebServices\Worker.cs">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Properties\Settings.settings" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Form1.resx" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="Properties\Resources.resx" Description="File successfully backed up as C:\snapshot\service_laptop\VTS900_SRC\PB980Mock\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="PB980Mock.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PB980Mock" Source="PB980Mock.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PB980Mock" Source="PB980Mock.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

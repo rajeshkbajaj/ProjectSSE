@@ -1,0 +1,3 @@
+# perl script found in: <PROJECT_ROOT>\CGRS\trunk\Documents\VikingBuildScript
+
+perl ./BuildPackage.pl /cygdrive/c/VikingTFTPRoot >BUILD_11092012.gz

@@ -1,0 +1,160 @@
+Log File Contents: { 1 Log Header +  'n' Records (n varies for each log) }
+
+Log Header Structure (size = 112 bytes)
+struct  SysLogsCommonHeader
+{
+	SysLogsFileIds  	fileId;
+	Uint32				fileRevision;
+	SysLogsLogStatus	status;
+	Uint32				patientId;
+	Uint32				insertPtr;
+	Uint32				extractPtr;
+	Uint32				currentPatientPtr;
+	Uint32				currentPatientCount;
+	Uint32				headerSize;
+	Uint32				recordSize;
+	Uint32              maxRecords;
+	Uint32              fileSize;
+	Uint32              warningLevelOffset;
+	Uint32              warningLevelIndex;
+	Uint32              fullLevelIndex;
+	SysLogsSearch		search;
+	TimeStamp			created;
+	TimeStamp			lastUpdated;
+	Uint32				patientBoundaryEnforced;
+	Uint32				checksum;
+};
+
+Records Description:
+User Interaction Log Record (logs/ui/ui.dat):
+Record Structure:
+{
+	TimeStamp  			timestamp;
+	Uint32            	patientId;
+	Uint32	            baseChecksum;
+	Uint32 				objectId;
+	Uint32    			userInteractionId;
+	Uint32	            recordChecksum;
+}
+
+
+
+Diagnostic Log Record (logs/diag/*.dat)
+Record Structure:
+{
+	TimeStamp  			timestamp;
+	Uint32            	patientId;		// Patient ID identifies current vs prior patients
+	Uint32	            baseChecksum;
+	DiagnosticCode      diagnosticCode;
+	Uint32	            recordChecksum;
+}
+
+
+TimeStamp structure:
+{
+    Uint8 year_;
+    Uint8  month_;
+    Uint8  dayOfMon_;
+	Uint8  hour_;
+	Uint8  min_;
+	Uint8  sec_;
+	Uint16  msec_;
+}
+
+
+
+See DiagnosticCodes.hh for the breakdown of multiple Unions
+
+
+
+struct SysLogsLogStatus
+{
+    Uint32  			unused                  :25;
+	Uint32  			warningLevelFeatureUsed :1;
+	Uint32  			warningLevelDetected    :1;
+	Uint32  			fullLevelFeatureUsed    :1;
+	Uint32  			fullLevelDetected       :1;
+	Uint32  			warningLevelReported    :1;
+	Uint32  			fullLevelReported       :1;
+	Uint32  			headerValid             :1;
+};
+
+
+struct SysLogsSearch
+{
+	Uint32				valid;
+	Uint32  			recordsStartPtr;					// Record index position within log file
+	Uint32  			recordsStopPtr;
+	Uint32  			recordsAvailable;
+	Uint32  			recordsRequested;
+	Uint32  			recordsObtained;
+	Uint32  			recordsObtainedPtr;
+};
+
+
+
+// The SYSLOGS_FILE_IDS are used to identify/verify the file type
+enum SysLogsFileIds
+{
+	SYSLOGS_CONFIGURATION_FILE_ID = 0,
+	SYSLOGS_ALARM_FILE_ID,
+	SYSLOGS_SYSTEM_DIAGNOSTIC_FILE_ID,
+	SYSLOGS_SYSTEM_COMMUNICATION_FILE_ID,
+	SYSLOGS_EST_SST_DIAGNOSTIC_FILE_ID,
+	SYSLOGS_GENERAL_EVENT_FILE_ID,
+	SYSLOGS_PATIENT_DATA_FILE_ID,
+	SYSLOGS_SETTINGS_FILE_ID,
+	SYSLOGS_SERVICE_FILE_ID,
+	SYSLOGS_FILE_IDS_END,
+};
+
+
+
+*****
+
+
+struct SettingsChangeData
+	{
+		Int32 			settingID;
+		SettingValue 	previousValue;
+		SettingValue 	currentValue;
+	};
+
+
+// Note - no way to know which part of the union to use without understanding the setting
+class SettingValue
+{
+	union MixData
+		{
+			BoundedValue  boundedValue_;
+			DiscreteValue  discreteValue_;
+			SequentialValue  sequentialValue_;
+		};
+}
+
+struct BoundedValue
+{
+  Real32     value;
+  Precision  precision;
+};
+typedef Int16  DiscreteValue;
+typedef Int32  SequentialValue;
+
+enum Precision
+{
+  THOUSANDTHS = -3,	// accurate to 10^(-3)...
+  HUNDREDTHS  = -2,	// accurate to 10^(-2)...
+  TENTHS      = -1,	// accurate to 10^(-1)...
+  ONES        =  0,	// accurate to 10^0...
+  TENS        =  1,	// accurate to 10^1...
+  HUNDREDS    =  2,	// accurate to 10^2...
+  THOUSANDS   =  3	// accurate to 10^3...
+};
+
+
+******
+
+
+
+
+

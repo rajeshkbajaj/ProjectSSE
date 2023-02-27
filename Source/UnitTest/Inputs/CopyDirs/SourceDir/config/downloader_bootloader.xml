@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<ventilator  standalone_install="true"> 
+
+
+    <!--
+    Software updates that need to be made by the GUI CPU.
+    -->
+    <replace uri="PB.GUI.FLASH.BOOT" load="0xfef00000" size="198188">
+        <package 
+            remote_path="bin/u-boot32.bin"
+            hash_value="a252fde4e74adaa6df03f061ec3b0b0c"
+            hash_type="md5"
+            part_number="10140988"
+            revision="X01"
+            compression="false" />
+    </replace>
+
+    <replace uri="PB.GUI.FLASH.DOWNLOAD" load="0xfeb00000" size="1692758">
+        <package 
+            remote_path="bin/BdUpd.bin.gz"
+            hash_value="c70606d5203e33131d34b77ebc0f0221"
+            hash_type="md5"
+            part_number="10140988"
+            revision="X01"
+            compression="true" />
+    </replace>
+
+
+
+
+    <!--
+        Software updates that need to be made by the BD CPU.
+    -->
+    <replace uri="PB.BD.FLASH.BOOT" load="0xfef00000" size="198188">
+        <package 
+            remote_path="bin/u-boot32.bin"
+            hash_value="a252fde4e74adaa6df03f061ec3b0b0c"
+            hash_type="md5"
+            part_number="10140988"
+            revision="X01"
+            compression="false" />
+    </replace>
+
+
+    <replace uri="PB.BD.FLASH.DOWNLOAD" load="0xfeb00000" size="1692758">
+        <package 
+            remote_path="bin/BdUpd.bin.gz"
+            hash_value="c70606d5203e33131d34b77ebc0f0221"
+            hash_type="md5"
+            part_number="10140988"
+            revision="X01"
+            compression="true" />
+    </replace>
+
+
+</ventilator> 
+

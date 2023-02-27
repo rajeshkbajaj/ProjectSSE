@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message schema_version="random_value" session_guid="SESSION_ID">
+	<request type='createdevice' xaction_guid="random_value">
+		<params>
+			<device_uri>{PB980_Ventilator}/{SESSION_ID}</device_uri>
+			<country>United States</country>			
+		</params>
+	</request>
+</message>
